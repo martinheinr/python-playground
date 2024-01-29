@@ -20,3 +20,19 @@ total = bill + tip # Sum the "total" of the "bill" and "tip"
 share = total / 2 # Divide "total" by number of friends dining
 print("Each person needs to pay: ", share) # Enter the required string and "share" 
 # Hint: Remember to convert incompatible data types
+
+print("blpha">"zeta")
+def numbers(number):
+    if number > 11: 
+        print(0)
+    elif number != 10:
+        print(1)
+    elif number >= 20 or number < 12:
+        print(2)
+    else:
+        print(3)
+
+numbers(10)
+
+print("A dog" < "A mouse")
+print(9999+8888 > 100*100)
