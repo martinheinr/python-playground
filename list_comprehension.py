@@ -1,3 +1,4 @@
+#Creates a new list based on the content of an existing list
 def odd_numbers(n):
 	return [x for x in range(1,n+1) if x % 2 != 0]
 
