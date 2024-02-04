@@ -15,3 +15,14 @@ def squares(start, end):
 print(squares(2, 3))    # Should print [4, 9]
 print(squares(1, 5))    # Should print [1, 4, 9, 16, 25]
 print(squares(0, 10))   # Should print [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+
+
+filenames = ["program.c", "stdio.hpp", "sample.hpp", "a.out", "math.hpp", "hpp.out"]
+# Generate new_filenames as a list containing the new filenames
+# using as many lines of code as your chosen method requires.
+# Start your code here
+new_filenames = [filename.replace(".hpp", ".h") for filename in filenames]
+
+
+print(new_filenames) 
+# Should print ["program.c", "stdio.h", "sample.h", "a.out", "math.h", "hpp.out"]
