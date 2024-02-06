@@ -52,3 +52,5 @@ def count_letters(text):
 print(count_letters("aaaaa"))
 print(count_letters("tenant"))
 print(count_letters("a long string with a lot of letters"))
+
+my_dictionary = {"keyA":["value1", "value2"], "keyB":["value3", "value4"]}
