@@ -8,6 +8,7 @@ import csv
 csv_file_location = "C:\\test_files\\employees.csv"
 
 def read_employees(csv_file_location):
+
     csv.register_dialect('empDialect', skipinitialspace=True, strict=True)
     employee_list = []
     with open(csv_file_location) as employees_list:
@@ -22,12 +23,17 @@ employee_list = read_employees(csv_file_location)
 
 def process_data(employee_list):
     department_list = []
-    for employee_data in employee_list:
-        department_list.append(employee_data['Department'])
-
+    for row in employee_list:
+        #Append the names of the department that are in the the row 'Department' to the list
+        department_list.append(row['Department'])
+    #Initialize the dictionairy
     department_data = {}
+    #Itterate through the list and for each of the department names (keys) add the value which is basically a count of how many times
+    #department name appears on the list
     for department_name in set(department_list):
         department_data[department_name] = department_list.count(department_name)
+    print(department_list)
+    print(department_data)
     return department_data
 
 dictionary = process_data(employee_list)
@@ -39,5 +45,5 @@ def write_report(dictionary, report_file):
             f.write(str(k)+':'+str(dictionary[k])+'\n')
     f.close()
 
-write_report(dictionary, 'C:\test_files\report.txt')
+#write_report(dictionary, 'C:\\test_files\\report.txt')
 
