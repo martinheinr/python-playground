@@ -16,6 +16,8 @@ print(os.listdir("python-playground"))
 dir = "python-playground"
 for name in os.listdir(dir):
     fullname = os.path.join(dir, name)
+    #os.path.join takes directory and name as parameters and
+    #creates a relative path as a string for each file/folde inside of dir. join is very useful cross platforms
     if os.path.isdir(fullname):
          print("{} is a directory".format(fullname))
     else:
