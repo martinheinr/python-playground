@@ -1,3 +1,5 @@
+#All the commands like date, ls and host are Linux commands so the example runs in WSL
+
 import subprocess
 """ subprocess.run(["date"])
 subprocess.run(["sleep", "2"])
