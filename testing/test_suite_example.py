@@ -4,7 +4,7 @@ import shutil
 
 # Function to test
 def simple_addition(a, b):
-	return a + b
+	return a + b +1 
 
 # Paths for file operations
 ORIGINAL_FILE_PATH = "C:/test_files/original_test_file.txt"
@@ -18,7 +18,7 @@ def setUpModule():
 	global COUNTER
 	COUNTER = 0
 
-	# Create a file in /tmp
+	# Create a file  on the path
 	with open(ORIGINAL_FILE_PATH, 'w') as file:
 		file.write("Test Results:\n")
 
@@ -41,7 +41,11 @@ class TestSimpleAddition(unittest.TestCase):
     	# Append the test result to the file
 		with open(ORIGINAL_FILE_PATH, 'a') as file:
 			result = "PASSED" if self._outcome.success else "FAILED"
+			print(result)
 			file.write(f"Test {COUNTER}: {result}\n")
+
+	def test_use_string(self):
+		self.assertEqual(simple_addition(1, 1), 2)
 
 	def test_add_positive_numbers(self):
 		self.assertEqual(simple_addition(3, 4), 7)
