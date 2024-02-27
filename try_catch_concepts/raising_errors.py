@@ -4,8 +4,10 @@ def validate_user(username, minlen):
 
   if len(username) < minlen:
     return False
+  
   if not username.isalnum():
     return False
+  
   return True
 
 #string_1 = validate_user("a", 0)

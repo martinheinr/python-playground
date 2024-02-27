@@ -15,6 +15,9 @@ class TestValidateUser(unittest.TestCase):
     self.assertEqual(validate_user("invalid_user", 1), False)
   
   def test_invalid_minlen(self):
+    #Parameters are Error, function_name, parameter 1 and parameter 2
+    #This test does try - catch in the background and tries to catch
+    #the error we told it to catch (ValueError)
     self.assertRaises(ValueError, validate_user, "user", -1)
 
 
