@@ -10,6 +10,6 @@ def main():
         print("Pending Reboot.")
         sys.exit(1)
     else:
-        print("No reboot pending")
+        print("No reboot pendingasdasda")
 
 main()
