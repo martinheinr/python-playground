@@ -11,5 +11,5 @@ def main():
         sys.exit(1)
     else:
         print("No reboot pendingasdasda")
-
+#Function
 main()
