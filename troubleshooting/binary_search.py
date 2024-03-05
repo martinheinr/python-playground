@@ -44,4 +44,5 @@ sorted_list = list_for_test.copy()
 
 index = (binary_search(sorted_list, "da"))
 
-print(index)
+print(sorted_list)
+print("index:", index, list_for_test[index])
