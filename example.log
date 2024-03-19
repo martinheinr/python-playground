@@ -1,0 +1,20 @@
+INFO:root:This was 7
+DEBUG:root:debug level as well
+WARNING:root:And this, too
+ERROR:root:And non-ASCII stuff, too, like Øresund and Malmö
+INFO:root:This was 7
+DEBUG:root:debug level as well
+WARNING:root:And this, too
+ERROR:root:And non-ASCII stuff, too, like Øresund and Malmö
+INFO:root:This was 7
+DEBUG:root:debug level as well
+WARNING:root:And this, too
+ERROR:root:And non-ASCII stuff, too, like Øresund and Malmö
+2024-03-08 21:17:33,512 INFO     This was 7
+2024-03-08 21:17:33,512 DEBUG    debug level as well
+2024-03-08 21:17:33,512 WARNING  And this, too
+2024-03-08 21:17:33,512 ERROR    And non-ASCII stuff, too, like Øresund and Malmö
+2024-03-08 21:18:19 INFO     This was 7
+2024-03-08 21:18:19 DEBUG    debug level as well
+2024-03-08 21:18:19 WARNING  And this, too
+2024-03-08 21:18:19 ERROR    And non-ASCII stuff, too, like Øresund and Malmö
